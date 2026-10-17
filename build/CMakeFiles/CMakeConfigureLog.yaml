@@ -1,0 +1,175 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: FreeBSD -  - x86_64
+      The host system is: Linux - 6.8.0-142-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/nas/orbis/bin/clang 
+      Build flags: --target=x86_64-freebsd-pc-elf;-O0;-DPPR;-DPS5;-DPS5_FW_VERSION=0x451;-D_POSIX_SOURCE;-D_POSIX_C_SOURCE=200112;-D__BSD_VISIBLE=1;-D__XSI_VISIBLE=500;-fno-builtin;-nostdlib;-Wall;-m64;-mfsgsbase;-maes;-mavx2;-mbmi;-march=znver2;-fno-omit-frame-pointer;-fPIC;-mcmodel=small;-nostdinc;-nodefaultlibs
+      Id flags:  
+      
+      The output was:
+      0
+      /usr/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000401000
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)
+      Target: x86_64-scei-ps4
+      Thread model: posix
+      InstalledDir: /home/nas/orbis/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)
+      Target: x86_64-scei-ps4
+      Thread model: posix
+      InstalledDir: /home/nas/orbis/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1131 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)
+      Target: x86_64-scei-ps4
+      Thread model: posix
+      InstalledDir: /home/nas/orbis/bin
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT"
+      binary: "/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--target=x86_64-freebsd-pc-elf -O0 -DPPR -DPS5 -DPS5_FW_VERSION=0x451  -D_POSIX_SOURCE -D_POSIX_C_SOURCE=200112 -D__BSD_VISIBLE=1 -D__XSI_VISIBLE=500 -fno-builtin -nostdlib -Wall -m64 -mfsgsbase -maes -mavx2 -mbmi -march=znver2 -fno-omit-frame-pointer -fPIC -mcmodel=small -nostdinc -nodefaultlibs"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fuse-ld=lld -Xlinker -T /home/nas/gta6-fake-menu-ps5sdk/linker.x -Wl,--build-id=none"
+      CMAKE_MODULE_PATH: "/tmp/PS5SDK/cmake/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_2ca1a
+        [1/2] /home/nas/orbis/bin/clang   --target=x86_64-freebsd-pc-elf -O0 -DPPR -DPS5 -DPS5_FW_VERSION=0x451  -D_POSIX_SOURCE -D_POSIX_C_SOURCE=200112 -D__BSD_VISIBLE=1 -D__XSI_VISIBLE=500 -fno-builtin -nostdlib -Wall -m64 -mfsgsbase -maes -mavx2 -mbmi -march=znver2 -fno-omit-frame-pointer -fPIC -mcmodel=small -nostdinc -nodefaultlibs    -v -MD -MT CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)
+        Target: x86_64-pc-freebsd-elf
+        Thread model: posix
+        InstalledDir: /home/nas/orbis/bin
+         (in-process)
+         "/home/nas/orbis/bin/clang-14" -cc1 -triple x86_64-pc-freebsd-elf -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-use-init-array -mcmodel=small -target-cpu znver2 -target-feature +fsgsbase -target-feature +aes -target-feature +avx2 -target-feature +bmi -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT -nostdsysteminc -nobuiltininc -resource-dir /home/nas/orbis/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -sys-header-deps -D PPR -D PS5 -D PS5_FW_VERSION=0x451 -D _POSIX_SOURCE -D _POSIX_C_SOURCE=200112 -D __BSD_VISIBLE=1 -D __XSI_VISIBLE=500 -O0 -Wall -fdebug-compilation-dir=/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT -ferror-limit 19 -fno-builtin -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 14.0.3 based upon LLVM 14.0.3 default target x86_64-scei-ps4
+        #include "..." search starts here:
+        End of search list.
+        [2/2] : && /home/nas/orbis/bin/clang --target=x86_64-freebsd-pc-elf -O0 -DPPR -DPS5 -DPS5_FW_VERSION=0x451  -D_POSIX_SOURCE -D_POSIX_C_SOURCE=200112 -D__BSD_VISIBLE=1 -D__XSI_VISIBLE=500 -fno-builtin -nostdlib -Wall -m64 -mfsgsbase -maes -mavx2 -mbmi -march=znver2 -fno-omit-frame-pointer -fPIC -mcmodel=small -nostdinc -nodefaultlibs -fuse-ld=lld -Xlinker -T /home/nas/gta6-fake-menu-ps5sdk/linker.x -Wl,--build-id=none -v CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -o cmTC_2ca1a   && :
+        clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)
+        Target: x86_64-pc-freebsd-elf
+        Thread model: posix
+        InstalledDir: /home/nas/orbis/bin
+        clang-14: warning: argument unused during compilation: '-nostdinc' [-Wunused-command-line-argument]
+         "/usr/bin/ld.lld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_2ca1a -L/usr/lib -T /home/nas/gta6-fake-menu-ps5sdk/linker.x --build-id=none CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o
+        ld.lld: warning: cannot find entry symbol _start; not setting start address
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        end of search list found
+        implicit include dirs: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_2ca1a]
+        ignore line: [[1/2] /home/nas/orbis/bin/clang   --target=x86_64-freebsd-pc-elf -O0 -DPPR -DPS5 -DPS5_FW_VERSION=0x451  -D_POSIX_SOURCE -D_POSIX_C_SOURCE=200112 -D__BSD_VISIBLE=1 -D__XSI_VISIBLE=500 -fno-builtin -nostdlib -Wall -m64 -mfsgsbase -maes -mavx2 -mbmi -march=znver2 -fno-omit-frame-pointer -fPIC -mcmodel=small -nostdinc -nodefaultlibs    -v -MD -MT CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)]
+        ignore line: [Target: x86_64-pc-freebsd-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/nas/orbis/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/nas/orbis/bin/clang-14" -cc1 -triple x86_64-pc-freebsd-elf -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -fno-use-init-array -mcmodel=small -target-cpu znver2 -target-feature +fsgsbase -target-feature +aes -target-feature +avx2 -target-feature +bmi -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT -nostdsysteminc -nobuiltininc -resource-dir /home/nas/orbis/lib/clang/14.0.3 -dependency-file CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -sys-header-deps -D PPR -D PS5 -D PS5_FW_VERSION=0x451 -D _POSIX_SOURCE -D _POSIX_C_SOURCE=200112 -D __BSD_VISIBLE=1 -D __XSI_VISIBLE=500 -O0 -Wall -fdebug-compilation-dir=/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/CMakeScratch/TryCompile-KIQLpT -ferror-limit 19 -fno-builtin -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 14.0.3 based upon LLVM 14.0.3 default target x86_64-scei-ps4]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/nas/orbis/bin/clang --target=x86_64-freebsd-pc-elf -O0 -DPPR -DPS5 -DPS5_FW_VERSION=0x451  -D_POSIX_SOURCE -D_POSIX_C_SOURCE=200112 -D__BSD_VISIBLE=1 -D__XSI_VISIBLE=500 -fno-builtin -nostdlib -Wall -m64 -mfsgsbase -maes -mavx2 -mbmi -march=znver2 -fno-omit-frame-pointer -fPIC -mcmodel=small -nostdinc -nodefaultlibs -fuse-ld=lld -Xlinker -T /home/nas/gta6-fake-menu-ps5sdk/linker.x -Wl,--build-id=none -v CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o -o cmTC_2ca1a   && :]
+        ignore line: [clang version 14.0.3 (https://github.com/llvm/llvm-project 1f9140064dfbfb0bbda8e51306ea51080b2f7aac)]
+        ignore line: [Target: x86_64-pc-freebsd-elf]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/nas/orbis/bin]
+        ignore line: [clang-14: warning: argument unused during compilation: '-nostdinc' [-Wunused-command-line-argument]]
+        link line: [ "/usr/bin/ld.lld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_2ca1a -L/usr/lib -T /home/nas/gta6-fake-menu-ps5sdk/linker.x --build-id=none CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o]
+          arg [/usr/bin/ld.lld] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/libexec/ld-elf.so.1] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2ca1a] ==> ignore
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-T] ==> ignore
+          arg [/home/nas/gta6-fake-menu-ps5sdk/linker.x] ==> ignore
+          arg [--build-id=none] ==> ignore
+          arg [CMakeFiles/cmTC_2ca1a.dir/CMakeCCompilerABI.c.o] ==> ignore
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/usr/lib]
+        implicit fwks: []
+      
+      
+...

@@ -1,0 +1,3 @@
+/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/gta6_fake_menu.dir
+/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/edit_cache.dir
+/home/nas/gta6-fake-menu-ps5sdk/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,11 @@
+# ninja log v5
+64	100	1792272027473924997	bin/gta6_fake_menu	682370aac6f880ce
+2	73	1792271796686627417	CMakeFiles/gta6_fake_menu.dir/src/render.c.o	3fd7d3839feccebf
+2	88	1792268756798864184	CMakeFiles/gta6_fake_menu.dir/src/menu.c.o	b9033f49105e637f
+2	45	1792268756755864474	CMakeFiles/gta6_fake_menu.dir/src/assets.c.o	d92611a37a885508
+1	84	1792271796697627336	CMakeFiles/gta6_fake_menu.dir/src/main.c.o	71eb1fe9a570b391
+3	53	1792271796665627574	CMakeFiles/gta6_fake_menu.dir/src/audio.c.o	767d4ff8314edeb
+1	64	1792272027439925246	CMakeFiles/gta6_fake_menu.dir/src/sony_resolve.c.o	a5dc2d1cdb032719
+2	49	1792271796661627604	CMakeFiles/gta6_fake_menu.dir/src/input.c.o	d8e310c438c244b4
+1	56	1792272413649120670	build.ninja	ef58564f60b4645a
+0	93	1792272413737120035	bin/gta6_fake_menu	36cf511216c6aa59
