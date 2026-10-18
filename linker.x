@@ -5,7 +5,14 @@ ENTRY(_start)
 
 PHDRS
 {
-	ph_all PT_LOAD FLAGS (0x7); /* R+W+X — single segment, no overlap */
+	/*
+	 * PF_X = 0x1
+	 * PF_W = 0x2
+	 * PF_R = 0x4
+	 */
+
+	ph_text PT_LOAD FLAGS (0x1 | 0x4);
+	ph_data PT_LOAD FLAGS (0x2 | 0x4);
 }
 
 SECTIONS
@@ -20,14 +27,14 @@ SECTIONS
 		*(.text .text.*)
 
 		. = ALIGN(4);
-	} : ph_all = 0x90909090
+	} : ph_text = 0x90909090
 
 	.rodata :
 	{
 		*(.rodata .rodata.*)
 
 		. = ALIGN(4);
-	} : ph_all
+	} : ph_text
 
 	. = ALIGN(0x4000);
 
@@ -52,5 +59,5 @@ SECTIONS
 
 		. = . + 4;
 		. = ALIGN(4);
-	} : ph_all
+	} : ph_data
 }
