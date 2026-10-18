@@ -49,8 +49,8 @@ target_link_libraries(gta6_fake_menu PRIVATE ${PS5SDK}/lib/libps5sdk_crt.a)
 
 # Linker flags from PS5SDK toolchain
 set_target_properties(gta6_fake_menu PROPERTIES
-    LINK_FLAGS "-fuse-ld=lld -Xlinker -T ${PS5SDK}/linker.x -Wl,--build-id=none"
+    LINK_FLAGS "-fuse-ld=lld -Xlinker -T ${CMAKE_CURRENT_SOURCE_DIR}/linker.x -Wl,--build-id=none"
 )
 
 # Copy linker script for CMake compiler test
-configure_file(${PS5SDK}/linker.x ${CMAKE_BINARY_DIR}/linker.x COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/linker.x ${CMAKE_BINARY_DIR}/linker.x COPYONLY)
